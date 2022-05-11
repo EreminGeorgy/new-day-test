@@ -1,0 +1,46 @@
+.app {
+    font-family: sans-serif;
+    text-align: center;
+    text-size-adjust: auto;
+  }
+  
+  button:focus,
+  input:focus {
+    outline: 2px dashed #000;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  
+  input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  
+  label {
+    align-self: center;
+    margin-right: 1em;
+  }
+  
+  .field {
+    display: flex;
+    vertical-align: center;
+    margin-bottom: 1em;
+  }
+  
+  @media (max-width: 340px) {
+    .field[title="user name input"] {
+      flex-direction: column;
+    }
+  
+    .bp4-dialog {
+      margin: 0;
+      height: 100vh;
+    }
+  }
+  
